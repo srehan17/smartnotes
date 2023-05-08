@@ -1,0 +1,11 @@
+.card:hover{
+    background-color: #eee;
+    transform: scale(1.02);
+    box-shadow: 0 10px 20px rgba(208, 165, 165, 0.12), 0 4px 8px rgba(0,0,0,.06);
+}
+
+ul.errorlist {display: none}
+
+.notes-bold {
+    font-weight: bold;
+}
