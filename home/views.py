@@ -7,7 +7,6 @@ from django.contrib.auth.mixins import LoginRequiredMixin
 from django.contrib.auth.views import LoginView, LogoutView
 from django.contrib.auth.forms import UserCreationForm
 from django.shortcuts import redirect
-import pytz
 
 class SignupView(CreateView):
     form_class = UserCreationForm
@@ -32,7 +31,6 @@ class HomeView(TemplateView):
     template_name = 'home/welcome.html'
     dt = datetime.now() - timedelta(hours=4)
     extra_context = {'today': dt}
-
 
 class AuthorizedView(LoginRequiredMixin, TemplateView):
     template_name = 'home/authorized.html'
